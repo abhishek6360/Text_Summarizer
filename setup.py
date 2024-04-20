@@ -11,20 +11,19 @@ AUTHOR_USER_NAME = "Abhishek6360"
 SRC_REPO = "textSummarization"
 AUTHOR_EMAIL = "abhishekr4532@gmail.com"
 
-
 setuptools.setup(
-    name=REPO_NAME,
+    name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
-    description="A small Python package that",
-    Long_description=long_description,
+    author_email=AUTHOR_EMAIL,
+    description="A small python package for NLP app",
+    long_description=long_description,
     long_description_content="text/markdown",
-    url=f"https://github.com/abhishek6360/Text_Summarization",
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
-        "Bug tracker": f"https://github.com/abhishek6360/Text_Summarization/issues",
-        
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
-    
+    packages=setuptools.find_packages(where="src")
 )
+
